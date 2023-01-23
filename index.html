@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html lang="ru">
+
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
   </head>
 
   <body>
-    <header class="main-header">
-      <nav class="main-navigation">
+    <header class="page-header">
+      <nav class="navigation">
         <a class="navigation-logo" href="index.html">
-        <img class="main-header-logo" src="#" alt="Логотип города Седона">
+          <img class="page-header-logo" src="#" alt="Логотип города Седона">
         </a>
 
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-link navigation-link-current" href="index.html" >Главная</a>
+            <a class="navigation-link navigation-link-current" href="index.html">Главная</a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">О Седоне</a>
@@ -26,25 +27,18 @@
 
         <ul class="navigation-list navigation-user">
           <li class="navigation-item">
-            <a class="navigation-link" href="#" >
-              <span class="visually-hidden">
-                Поиск
-              </span>
+            <a class="navigation-link" href="#">
+              <span class="visually-hidden">Поиск</span>
             </a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">
-              <span class="visually-hidden">
-                Избранное
-              </span>
+              <span class="visually-hidden">Избранное</span>
+              <span class="visually-hidden">Счетчик</span>
             </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">
-              <span class="visually-hidden">
-                ХОЧУ СЮДА!
-              </span>
-            </a>
+            <a class="navigation-link" href="#">Хочу сюда!</a>
           </li>
         </ul>
       </nav>
@@ -94,9 +88,9 @@
         <p>Опытный персонал и качественное обслуживание!</p>
         <ul class="conveniences-list">
           <li class="conveniences-items">
-          <img src="#" alt="Домик">
-          <h3 class="conveniences-list">Жильё</h3>
-          <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+            <img src="#" alt="Домик">
+            <h3 class="conveniences-list">Жильё</h3>
+            <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
           </li>
           <li class="conveniences-items">
             <img src="#" alt="Бургер">
@@ -120,51 +114,52 @@
     </main>
 
     <footer class="main-footer">
-      <section class="subscription-catalog">
+      <section class="subscription-main">
         <h2 class="subscription-header">Подпишитесь на рассылку</h2>
         <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
-         <label>
-          <input class="subscription-field"  placeholder="Ваш email" type="email" name="subscription-email" required>
-          <button class="button subscription-button" type="submit">
-          Подписаться
-          </button>
-         </label>
-       </form>
+          <label>
+            <input class="subscription-field" placeholder="Ваш email" type="email" name="subscription-email" required>
+            <button class="button subscription-button" type="submit">
+              Подписаться
+            </button>
+          </label>
+        </form>
       </section>
 
       <section class="footer-social">
         <h2 class="visually-hidden">Мы в соцсетях</h2>
         <ul class="footer-social-list">
-            <li class="footer-social-item">
-              <a class="button" href="#">
-                <span class="visually-hidden">ВКонтакте</span>
-              </a>
-            </li>
-            <li class="footer-social-item">
-              <a class="button" href="#">
-                <span class="visually-hidden">Телеграм</span>
-              </a>
-            </li>
-            <li class="footer-social-item">
-              <a class="button" href="#">
-                <span class="visually-hidden">Ютуб</span>
-              </a>
-            </li>
-          </ul>
-        </section>
+          <li class="footer-social-item">
+            <a class="button" href="#">
+              <span class="visually-hidden">ВКонтакте</span>
+            </a>
+          </li>
+          <li class="footer-social-item">
+            <a class="button" href="#">
+              <span class="visually-hidden">Телеграм</span>
+            </a>
+          </li>
+          <li class="footer-social-item">
+            <a class="button" href="#">
+              <span class="visually-hidden">Ютуб</span>
+            </a>
+          </li>
+        </ul>
+      </section>
 
       <section class="contacts">
-       <h2 class="visually-hidden">Контакты</h2>
-       <adress class="contacts-adress">
-        <a class="contacts-address-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-       </adress>
+        <h2 class="visually-hidden">Контакты</h2>
+        <adress class="contacts-adress">
+          <a class="contacts-address-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+        </adress>
       </section>
 
       <section class="creator">
         <h2 class="visually-hidden">Автор сайта</h2>
-         <img src="#" alt="Логотип хтмл академии">
-       </section>
+        <img src="#" alt="Логотип хтмл академии">
+      </section>
     </footer>
   </body>
+
 </html>
