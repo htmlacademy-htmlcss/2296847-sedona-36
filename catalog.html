@@ -33,8 +33,8 @@
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">
-              <span class="visually-hidden">Избранное</span>
-              <span class="visually-hidden">Счетчик</span>
+              <span class="visually-hidden">Отели добавленные в избранное</span>
+              <span class="favourites-number">12</span>
             </a>
           </li>
           <li class="navigation-item">
@@ -44,10 +44,10 @@
       </nav>
     </header>
 
-    <main class="catalog-main">
+    <main class="catalog">
       <div class="background-catalog">
-        <header class="catalog-header">
-          <h1 class="catalog-header-title">Гостиницы Седоны</h1>
+        <section class="catalog">
+          <h1 class="catalog-title">Гостиницы Седоны</h1>
           <ul class="breadcrumbs">
             <li class="breadcrumbs-item">
               <a class="breadcrumbs-link" href="index.html">
@@ -55,42 +55,30 @@
               </a>
             </li>
             <li class="breadcrumbs-item">
-              <a class="breadcrumbs-link">Гостиницы</a>
+              Гостиницы
             </li>
           </ul>
-        </header>
+        </section>
         <section class="filter">
           <h2 class="visually-hidden">Фильтры гостиниц</h2>
           <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
             <fieldset class="catalog-filter-group">
               <legend class="catalog-filter-title">Инфраструктура:</legend>
-              <label class="control">
-                <input class="control-input" type="checkbox" name="pool" checked>
-                Бассейн
-              </label>
-              <label class="control">
-                <input class="control-input" type="checkbox" name="parking" checked>
-                Парковка
-              </label>
-              <label class="control">
-                <input class="control-input" type="checkbox" name="wi-fi">
-                Wi-Fi
-              </label>
+              <label class="control" for="pool">Бассейн</label>
+              <input class="control-input" type="checkbox" name="pool" id="pool" checked>
+              <label class="control" for="parking">Парковка</label>
+              <input class="control-input" type="checkbox" name="parking" id="parking" checked>
+              <label class="control" for="wi-fi">Wi-Fi</label>
+              <input class="control-input" type="checkbox" name="wi-fi" id="wi-fi">
             </fieldset>
             <fieldset class="catalog-filter-group">
-              <legend class="catalog-filter-title">Тип Жилья:</legend>
-              <label class="control">
-                <input class="control-input" type="radio" name="type-of-housing" value="hotel" checked>
-                Отель
-              </label>
-              <label class="control">
-                <input class="control-input" type="radio" name="type-of-housing" value="motel">
-                Мотель
-              </label>
-              <label class="control">
-                <input class="control-input" type="radio" name="type-of-housing" value="apartment">
-                Апартаменты
-              </label>
+              <legend class="catalog-filter-title">Тип жилья:</legend>
+              <label class="control" for="hotel">Отель</label>
+              <input class="control-input" type="radio" name="type-of-housing" value="hotel" id="hotel" checked>
+              <label class="control" for="motel">Мотель</label>
+              <input class="control-input" type="radio" name="type-of-housing" value="motel" id="motel">
+              <label class="control" for="apartment">Апартаменты</label>
+              <input class="control-input" type="radio" name="type-of-housing" value="apartment" id="apartment">
             </fieldset>
             <fieldset class="catalog-filter-group">
               <legend class="catalog-filter-title">Стоимость, ₽:</legend>
@@ -120,8 +108,10 @@
         </a>
         <ul class="property-list">
           <li class="property-card">
-            <a class="property-card-link" href="#">
+            <a class="property-card-link" href="#" tabindex="-1">
               <img class="property-card-image" src="#" alt="Гостиница Amara Resort & Spa">
+            </a>
+            <a class="property-card-link" href="#" tabindex="-1">
               <h3 class="property-card-title">Amara Resort & Spa</h3>
             </a>
             <p class="property-card-type-of-housing">Гостиница</p>
@@ -130,12 +120,14 @@
             <button class="property-card-button-favorites-add button" type="button">
               В избранное
             </button>
-            <!-- тут будет звездность отеля <img class="property-card-four-stars" src="#" alt="У гостиницы 4 звезды"> -->
-            <b class="property-card-rating">Рейтинг: <span class="property-card-rating-value">8,5</span></b>
+            <p class="star star-four"><span>4 звезды</span></p>
+            <p class="property-card-rating">Рейтинг: 8,5</p>
           </li>
           <li class="property-card">
-            <a class="property-card-link" href="#">
+            <a class="property-card-link" href="#" tabindex="-1">
               <img class="property-card-image" src="#" alt="Гостиница Villas at Poco Diablo">
+            </a>
+            <a class="property-card-link" href="#" tabindex="-1">
               <h3 class="property-card-title">Villas at Poco Diablo</h3>
             </a>
             <p class="property-card-type-of-housing">Гостиница</p>
@@ -144,12 +136,14 @@
             <button class="property-card-button-favorites-added button" type="button">
               В избранном
             </button>
-            <!-- тут будет звездность отеля <img class="property-card-four-stars" src="#" alt="У гостиницы 4 звезды"> -->
-            <b class="property-card-rating">Рейтинг: <span class="property-card-rating-value">9,2</span></b>
+            <p class="star star-four"><span>4 звезды</span></p>
+            <p class="property-card-rating">Рейтинг: 9,2</p>
           </li>
           <li class="property-card">
-            <a class="property-card-link" href="#">
+            <a class="property-card-link" href="#" tabindex="-1">
               <img class="property-card-image" src="#" alt="Гостиница Desert Quail Inn">
+            </a>
+            <a class="property-card-link" href="#" tabindex="-1">
               <h3 class="property-card-title">Desert Quail Inn</h3>
             </a>
             <p class="property-card-type-of-housing">Гостиница</p>
@@ -158,12 +152,14 @@
             <button class="property-card-button-favorites-add button" type="button">
               В избранное
             </button>
-            <!-- тут будет звездность отеля <img class="property-card-three-stars" src="#" alt="У гостиницы 3 звезды"> -->
-            <b class="property-card-rating">Рейтинг: <span class="property-card-rating-value">6,9</span></b>
+            <p class="star star-three"><span>3 звезды</span></p>
+            <p class="property-card-rating">Рейтинг: 6,9</p>
           </li>
           <li class="property-card">
-            <a class="property-card-link" href="#">
+            <a class="property-card-link" href="#" tabindex="-1">
               <img class="property-card-image" src="#" alt="Гостиница GreenTree Inn">
+            </a>
+            <a class="property-card-link" href="#" tabindex="-1">
               <h3 class="property-card-title">GreenTree Inn</h3>
             </a>
             <p class="property-card-type-of-housing">Гостиница</p>
@@ -172,8 +168,8 @@
             <button class="property-card-button-favorites-add button" type="button">
               В избранное
             </button>
-            <!-- тут будет звездность отеля <img class="property-card-two-stars" src="#" alt="У гостиницы 2 звезды"> -->
-            <b class="property-card-rating">Рейтинг: <span class="property-card-rating-value">5,0</span></b>
+            <p class="star star-two"><span>2 звезды</span></p>
+            <p class="property-card-rating">Рейтинг: 5,0</p>
           </li>
         </ul>
         <ul class="pagination">
@@ -199,14 +195,14 @@
       </section>
     </main>
     <footer class="page-footer">
-      <div class="subscription-catalog">
+      <section class="subscription-catalog">
         <h2 class="subscription-title">Подпишитесь на рассылку</h2>
         <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
           <input class="subscription-field" placeholder="Ваш email" type="email" name="subscription-email" required>
           <button class="button subscription-button" type="submit">Подписаться</button>
         </form>
-      </div>
+      </section>
 
       <ul class="footer-social-list">
         <li class="footer-social-item">
@@ -228,8 +224,8 @@
 
       <a class="phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
 
-      <a class="navigation-logo" href="https://htmlacademy.ru/">>
-        <img src="#" alt="Логотип хтмл академии">
+      <a class="navigation-logo" href="https://htmlacademy.ru/">
+        <img src="#" alt="Логотип HTML Academy">
       </a>
     </footer>
   </body>
