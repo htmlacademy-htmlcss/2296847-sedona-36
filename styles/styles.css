@@ -70,7 +70,7 @@ body {
   color: #000000;
 }
 
-.reasons {
+.advantages-reasons {
   font-size: 22px;
   line-height: 26px;
   text-align: center;
@@ -83,7 +83,7 @@ body {
   text-align: center;
   width: 800px;
   height: 800px;
-  outline 1px solid red;
+  list-style-type: none;
 }
 
 .advantages-title {
@@ -91,10 +91,10 @@ body {
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
-  list-style-type: none;
 }
 
-.advantages-item-square, .advantages-item-tourists {
+.advantages-item-square,
+.advantages-item-tourists {
   background-color: rgba(131, 179, 211, 0.12);
   color: #000000;
 }
@@ -105,5 +105,38 @@ body {
 }
 
 .text {
+  color: #333333;
+}
+
+.conveniences-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.conveniences-service {
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.conveniences-items {
+  background-color: rgba(131, 179, 211, 0.12);
   color:#333333;
+  text-align: center;
+  width: 400px;
+  height: 385px;
+  list-style-type: none;
+}
+
+.conveniences-subtitle {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
 }
