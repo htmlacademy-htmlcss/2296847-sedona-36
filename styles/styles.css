@@ -14,12 +14,26 @@
   font-display: swap;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 body {
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
   background-color: #FFFFFF;
-  color: #000000;
+  color: #333333;
+  ;
 }
 
 .navigation-item {
@@ -45,4 +59,51 @@ body {
   text-align: center;
   text-transform: uppercase;
   color: #FFFFFF;
+}
+
+.advantages-title-main {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.reasons {
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.advantages-item {
+  background-color: #82B3D3;
+  color: #FFFFFF;
+  text-align: center;
+  width: 800px;
+  height: 800px;
+  outline 1px solid red;
+}
+
+.advantages-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  list-style-type: none;
+}
+
+.advantages-item-square, .advantages-item-tourists {
+  background-color: rgba(131, 179, 211, 0.12);
+  color: #000000;
+}
+
+.advantages-item-road {
+  background-color: rgba(131, 179, 211, 0.2);
+  color: #000000;
+}
+
+.text {
+  color:#333333;
 }
