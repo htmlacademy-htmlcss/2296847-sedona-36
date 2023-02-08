@@ -292,3 +292,31 @@ body {
 .property-card-button-favorites-added {
   background-color: #7DB54F;
 }
+
+.pagination-item {
+  list-style-type: none;
+
+}
+
+.pagination-link {
+  background-color: #82B3D3;
+  color: #FFFFFF;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.pagination-current {
+  background-color: #F2F2F2;
+  color: #000000;
+}
+
+.pagination-show-more {
+  font-size: 22px;
+  line-height: 26px;
+  color: #000000;
+  background-color: #FFFFFF;
+}
