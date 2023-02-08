@@ -163,3 +163,31 @@ body {
   color: #FFFFFF;
   text-decoration: none;
 }
+
+.subscription-main {
+  color: #FFFFFF;
+  background-color: #000000;
+  background-image: url(../images/subscribe-background.jpg);
+  background-size: 1200px 414.86px;
+  background-repeat: no-repeat;
+}
+
+.subscription-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.subscription-main p {
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.subscription-field {
+  background-color: #F2F2F2;
+  font-size: 18px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.6);
+}
