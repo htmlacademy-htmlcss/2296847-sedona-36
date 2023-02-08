@@ -34,6 +34,8 @@
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
+  background-color: #756157;
+  text-decoration: none;
 }
 
 body {
@@ -163,14 +165,9 @@ body {
 }
 
 .how-to-find-link {
-  background-color: #756157;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
-  text-align: center;
-  text-transform: uppercase;
-  color: #FFFFFF;
-  text-decoration: none;
 }
 
 .subscription-main {
@@ -227,6 +224,7 @@ body {
 
 .breadcrumbs-item {
   font-size: 16px;
+  list-style-type: none;
 }
 
 .catalog-filter-title {
@@ -237,7 +235,7 @@ body {
 }
 
 .control {
-line-height: 23px;
+  line-height: 23px;
 }
 
 .button-submit {
@@ -249,16 +247,48 @@ line-height: 23px;
 }
 
 .search-result-title {
-font-weight: 700;
-font-size: 30px;
-line-height: 36px;
-text-transform: uppercase;
-color: #000000;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #000000;
 }
 
 .select-control {
-font-family: 'PT Sans', sans-serif;
-font-size: 18px;
-line-height: 21px;
-color: #333333;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+}
+
+.property-card {
+  list-style-type: none;
+}
+
+.property-card-link {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.property-card-price {
+  text-align: right;
+}
+
+.property-card-button-favorites-add {
+  background-color: #82B3D3;
+}
+
+.property-card-rating {
+  background-color: #F2F2F2;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.property-card-button-favorites-added {
+  background-color: #7DB54F;
 }
