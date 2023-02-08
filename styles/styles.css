@@ -193,6 +193,9 @@ body {
 
 .subscription-button {
   background-color: #82B3D3;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
 }
 
 .footer-social-list {
@@ -319,4 +322,14 @@ body {
   line-height: 26px;
   color: #000000;
   background-color: #FFFFFF;
+}
+
+.subscription-title-catalog {
+  color: #000000;
+}
+
+.subscription-catalog p {
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
 }
