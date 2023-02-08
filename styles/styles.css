@@ -28,7 +28,7 @@
 }
 
 .button {
-  color: #FFFFFF;
+  color: #ffffff;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -43,7 +43,7 @@ body {
   font-size: 18px;
   line-height: 21px;
   font-weight: 400;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   color: #333333;
   ;
 }
@@ -67,7 +67,7 @@ body {
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .advantages-title-main {
@@ -87,8 +87,8 @@ body {
 }
 
 .advantages-item {
-  background-color: #82B3D3;
-  color: #FFFFFF;
+  background-color: #82b3d3;
+  color: #ffffff;
   text-align: center;
   width: 800px;
   height: 800px;
@@ -172,7 +172,7 @@ body {
 }
 
 .subscription-main {
-  color: #FFFFFF;
+  color: #ffffff;
   background-color: #000000;
   background-image: url(../images/subscribe-background.jpg);
   background-size: 100% auto;
@@ -193,7 +193,7 @@ body {
 }
 
 .subscription-button {
-  background-color: #82B3D3;
+  background-color: #82b3d3;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
@@ -214,7 +214,7 @@ body {
 
 .background-catalog {
   background-color: #000000;
-  color: #FFFFFF;
+  color: #ffffff;
   background-image: url(../images/filter-background.jpg);
   background-size: 100% auto;
   background-repeat: no-repeat;
@@ -282,11 +282,11 @@ body {
 }
 
 .property-card-button-favorites-add {
-  background-color: #82B3D3;
+  background-color: #82b3d3;
 }
 
 .property-card-rating {
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
@@ -294,7 +294,7 @@ body {
 }
 
 .property-card-button-favorites-added {
-  background-color: #7DB54F;
+  background-color: #7db54f;
 }
 
 .pagination-item {
@@ -303,8 +303,8 @@ body {
 }
 
 .pagination-link {
-  background-color: #82B3D3;
-  color: #FFFFFF;
+  background-color: #82b3d3;
+  color: #ffffff;
   text-decoration: none;
   font-weight: 700;
   font-size: 20px;
@@ -314,7 +314,7 @@ body {
 }
 
 .pagination-current {
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   color: #000000;
 }
 
@@ -322,7 +322,7 @@ body {
   font-size: 22px;
   line-height: 26px;
   color: #000000;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 .subscription-title-catalog {
