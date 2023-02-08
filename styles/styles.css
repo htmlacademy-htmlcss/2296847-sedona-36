@@ -27,6 +27,15 @@
   overflow: hidden;
 }
 
+.button {
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 body {
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
@@ -168,7 +177,7 @@ body {
   color: #FFFFFF;
   background-color: #000000;
   background-image: url(../images/subscribe-background.jpg);
-  background-size: 1200px 414.86px;
+  background-size: 100% auto;
   background-repeat: no-repeat;
 }
 
@@ -185,9 +194,19 @@ body {
   text-align: center;
 }
 
-.subscription-field {
-  background-color: #F2F2F2;
-  font-size: 18px;
-  line-height: 24px;
-  color: rgba(0, 0, 0, 0.6);
+.subscription-button {
+  background-color: #82B3D3;
+}
+
+.footer-social-list {
+  list-style-type: none;
+}
+
+.phone {
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: #000000;
+  text-decoration: none;
+
 }
