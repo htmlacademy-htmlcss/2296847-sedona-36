@@ -341,6 +341,7 @@ body {
   background-image: url(../images/filter-background.jpg);
   background-size: 100% auto;
   background-repeat: no-repeat;
+  height: 412px;
 }
 
 .catalog-title {
@@ -352,6 +353,20 @@ body {
 .breadcrumbs-item {
   font-size: 16px;
   list-style-type: none;
+}
+
+.catalog-filter {
+  display: flex;
+}
+
+.catalog-filter-group {
+  width: 150px;
+  margin-right: 70px;
+}
+
+.catalog-filter-group-cost {
+  width: 288px;
+  margin-left: auto;
 }
 
 .catalog-filter-title {
