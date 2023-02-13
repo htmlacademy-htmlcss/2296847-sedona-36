@@ -39,29 +39,24 @@
   text-decoration: none;
 }
 
-html {
-  height: 100%;
-  min-height: 100%;
-}
-
 body {
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
   font-weight: 400;
-  background-color: #ffffff;
+  background-color: #f2f2f2;
   color: #333333;
-  height: 100%;
-  min-width: 1280px;
-  display: flex;
-  flex-direction: column;
-  min-height: 100%;
   margin: 0;
 }
 
 .page-container {
+  background-color: #ffffff;
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
   margin: 0 auto;
   width: 1200px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .navigation {
@@ -152,14 +147,14 @@ body {
   color: #ffffff;
   text-align: center;
   width: 400px;
-  height: 385px;
+  min-height: 385px;
   list-style-type: none;
 }
 
 .advantages-town,
 .advantages-bridge {
   display: flex;
-  width: 1200px;
+  width: 100%;
 }
 
 .advantages-container-bridge {
@@ -218,7 +213,7 @@ body {
   color: #333333;
   text-align: center;
   width: 400px;
-  height: 385px;
+  min-height: 385px;
   list-style-type: none;
 }
 
@@ -259,7 +254,7 @@ body {
   line-height: 36px;
   display: block;
   width: 376px;
-  margin: 0 auto 95px;
+  margin: 0 auto 96px;
   padding: 8px 50px;
   box-sizing: border-box;
 }
@@ -271,8 +266,9 @@ body {
   background-size: 100% auto;
   background-repeat: no-repeat;
   margin: 0 0 40px;
-  height: 415px;
-  border-top: 1px solid #ffffff;
+  min-height: 415px;
+  padding: 96px 258px 104px 258px;
+  box-sizing: border-box;
 }
 
 .subscription-title {
@@ -280,7 +276,7 @@ body {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
-  margin: 96px auto 20px;
+  margin: 0 auto 20px;
   text-align: center;
 }
 
@@ -470,7 +466,7 @@ body {
 .pagination {
   display: flex;
   width: 1060px;
-  margin: 0 auto 156px;
+  margin: 0 auto 60px;
   padding: 0;
 }
 
@@ -503,7 +499,8 @@ body {
 }
 
 .subscription-catalog {
-  margin-bottom: 144px;
+  padding: 96px 258px 104px 258px;
+  margin-bottom: 40px;
 }
 
 .subscription-title-catalog {
