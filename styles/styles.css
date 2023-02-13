@@ -136,7 +136,7 @@ body {
   font-size: 22px;
   line-height: 26px;
   text-align: center;
-  margin: 0 auto 69px;
+  margin: 0 auto 90px;
 }
 
 .advantages-list {
@@ -259,6 +259,8 @@ body {
   display: block;
   width: 376px;
   margin: 0 auto 95px;
+  padding: 8px 50px;
+  box-sizing: border-box;
 }
 
 .subscription-main {
@@ -314,7 +316,8 @@ body {
   display: flex;
   justify-content: space-between;
   width: 1060px;
-  margin: 0 auto 30px;
+  margin: 40px auto 30px;
+  align-items: center;
 }
 
 .footer-social-list {
@@ -331,6 +334,7 @@ body {
   color: #000000;
   text-decoration: none;
   width: 720px;
+  margin: 5px 0;
 }
 
 .background-catalog {
