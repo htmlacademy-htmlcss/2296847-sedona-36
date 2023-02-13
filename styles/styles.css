@@ -63,20 +63,14 @@ body {
   width: 1200px;
 }
 
-.header {
-  padding: 0 70px;
-}
-
 .navigation {
   display: flex;
-  height: 64px;
-
+  margin: 0 auto -6px;
+  width: 1060px;
 }
 
 .navigation-logo {
-  width: 140px;
-  height: 70px;
-  margin-left: 70px;
+  width: 138px;
   margin-right: 20px;
 }
 
@@ -84,6 +78,7 @@ body {
   margin: 0;
   padding: 0;
   max-width: 450px;
+  list-style-type: none;
 }
 
 .navigation-user {
@@ -91,9 +86,7 @@ body {
   margin-left: auto;
 }
 
-.navigation-item {
-  list-style-type: none;
-}
+.navigation-item {}
 
 .navigation-link {
   font-weight: 700;
@@ -134,18 +127,22 @@ body {
   text-align: center;
   text-transform: uppercase;
   color: #000000;
+  margin: 69px auto 25px;
+  width: 620px;
+
 }
 
 .advantages-reasons {
   font-size: 22px;
   line-height: 26px;
   text-align: center;
+  margin: 0 auto 69px;
 }
 
 .advantages-list {
   display: flex;
   flex-wrap: wrap;
-  margin: 0;
+  margin: 0 0 64px;
   padding: 0;
 }
 
@@ -162,6 +159,10 @@ body {
 .advantages-bridge {
   display: flex;
   width: 1200px;
+}
+
+.advantages-container-bridge {
+  order: 2;
 }
 
 .advantages-title {
@@ -193,21 +194,21 @@ body {
   text-align: center;
   text-transform: uppercase;
   color: #000000;
-  margin: 20px auto 0;
+  margin: 0 auto 20px;
   width: 505px;
-  height: 72px;
 }
 
 .conveniences-service {
   font-size: 22px;
   line-height: 26px;
   text-align: center;
-  margin-bottom: 64px;
+  margin: 0 auto 64px;
+
 }
 
 .conveniences-list {
   display: flex;
-  margin: 0;
+  margin: 0 0 96px;
   padding: 0;
 }
 
@@ -233,17 +234,6 @@ body {
   color: #000000;
 }
 
-.how-to-find {
-  height: 406px;
-}
-
-.how-to-find-container {
-
-  margin: 0 auto;
-  width: 592px;
-  height: 214px;
-}
-
 .intrested {
   font-weight: 700;
   font-size: 30px;
@@ -251,19 +241,24 @@ body {
   text-align: center;
   text-transform: uppercase;
   color: #000000;
-  margin: 0;
+  margin: 0 auto 20px;
 }
 
 .best-deals {
   font-size: 22px;
   line-height: 26px;
   text-align: center;
+  width: 592px;
+  margin: 0 auto 54px;
 }
 
 .how-to-find-link {
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
+  display: block;
+  width: 376px;
+  margin: 0 auto 95px;
 }
 
 .subscription-main {
@@ -272,18 +267,9 @@ body {
   background-image: url(../images/subscribe-background.jpg);
   background-size: 100% auto;
   background-repeat: no-repeat;
-  margin: 0;
+  margin: 0 0 40px;
   height: 415px;
-  border: 1px solid;
-}
-
-.subscrition-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 96px auto 104px;
-  width: 684px;
-  height: 215px;
+  border-top: 1px solid #ffffff;
 }
 
 .subscription-title {
@@ -291,6 +277,13 @@ body {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
+  margin: 96px auto 20px;
+  text-align: center;
+}
+
+.subscription-form {
+  margin: 0 auto;
+  width: 684px;
 }
 
 .subscription-field {
@@ -299,12 +292,15 @@ body {
   line-height: 24px;
   color: #000000;
   background: #f2f2f2;
+  width: 452px;
 }
 
 .subscription-main p {
   font-size: 22px;
   line-height: 26px;
   text-align: center;
+  width: 475px;
+  margin: 0 auto 54px;
 }
 
 .subscription-button {
@@ -317,14 +313,13 @@ body {
 .footer-container {
   display: flex;
   justify-content: space-between;
-  height: 80px;
-  padding: 40px 70px 30px;
+  width: 1060px;
+  margin: 0 auto 30px;
 }
 
 .footer-social-list {
   list-style-type: none;
   width: 142px;
-  height: 40px;
   margin: 0;
   padding: 0;
 }
@@ -336,12 +331,6 @@ body {
   color: #000000;
   text-decoration: none;
   width: 720px;
-  height: 50px;
-}
-
-.navigation-logo {
-  margin: 0;
-  padding: 0;
 }
 
 .background-catalog {
@@ -402,6 +391,7 @@ body {
 .search-result-container {
   display: flex;
   margin-bottom: 40px;
+  height: 49px;
 }
 
 .search-result-title {
@@ -411,6 +401,7 @@ body {
   text-transform: uppercase;
   color: #000000;
   width: 338px;
+  margin: 0;
   margin-right: 200px;
 }
 
@@ -426,12 +417,13 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+  margin: 0;
   margin-bottom: 80px;
 }
 
 .property-card {
   list-style-type: none;
-  }
+}
 
 .property-card-link {
   font-weight: 700;
