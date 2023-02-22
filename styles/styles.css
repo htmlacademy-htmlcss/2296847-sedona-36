@@ -492,14 +492,23 @@ body {
 }
 
 .property-list {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 340px 340px 340px;
   gap: 20px;
   margin: 0 auto 80px;
-  padding: 0;
-  width: 1060px;
+  padding: 0 70px;
   list-style-type: none;
 }
+
+.property-card {
+  padding: 20px;
+  display: grid;
+  gap: 16px 20px;
+  grid-template-rows: 212px 1fr min-content auto auto;
+  border: 1px solid #E6E6E6;
+  border-radius: 4px;
+}
+
 
 .property-card-link {
   font-weight: 700;
@@ -507,14 +516,50 @@ body {
   line-height: 28px;
   color: #000000;
   text-decoration: none;
+  grid-column: 1/3;
+  max-height: 212px;
+
+}
+
+.property-card-image {
+  object-fit: contain;
+}
+
+.property-card-title {
+  margin: 0;
+  max-width: 300px;
+  overflow-wrap: break-word;
+}
+
+.property-card-type-of-housing {
+  margin: 0;
+  max-width: 140px;
+  overflow-wrap: break-word;
+
 }
 
 .property-card-price {
   text-align: right;
+  margin: 0;
+  align-self: end;
+
+
+}
+
+.property-card-button {
+  padding: 8px 26px;
 }
 
 .property-card-button-favorites-add {
   background-color: #82b3d3;
+  padding: 8px 20px;
+  border: none;
+
+}
+
+.star {
+  margin: 0;
+
 }
 
 .property-card-rating {
@@ -523,10 +568,16 @@ body {
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
+  margin: 0;
+  padding: 9px 0 8px 0;
+
 }
 
 .property-card-button-favorites-added {
   background-color: #7db54f;
+  padding: 8px 18px;
+  border: none;
+
 }
 
 .pagination {
