@@ -185,11 +185,17 @@ body {
 .welcome-mountains {
   grid-column: 1/2;
   grid-row: 1/2;
+  position: relative;
 }
 
 .welcome-mountains::before {
-  background-image: url(../images/divider.svg);
-  background-repeat: no-repeat;
+  content: url(../images/divider.svg);
+  position: absolute;
+  bottom: 57px;
+  height: 57px;
+  width: 1200px;
+  z-index: 2;
+  background: #FFFFFF;
 }
 
 .advantages {
@@ -228,7 +234,7 @@ body {
   color: #ffffff;
   text-align: center;
   width: 400px;
-  min-height: 385px;
+
 }
 
 .advantages-town,
@@ -242,6 +248,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   min-height: 385px;
 }
 
@@ -257,8 +264,21 @@ body {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
+  text-align: center;
   text-transform: uppercase;
   margin: 0 auto 62px;
+  position: relative;
+}
+
+.advantages-title::before {
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  width: 60px;
+  height: 2px;
+  margin-left: -30px;
+  background-color: rgba(255, 255, 255, 0.3);
+  content: "";
 }
 
 .advantages-item-square,
@@ -270,6 +290,16 @@ body {
 .advantages-item-road {
   background-color: rgba(131, 179, 211, 0.2);
   color: #000000;
+}
+
+.advantages-title-square::before,
+.advantages-title-road::before,
+.advantages-title-tourists::before {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.advantages-item img {
+  object-fit: contain;
 }
 
 .text {
@@ -327,6 +357,37 @@ body {
   text-transform: uppercase;
   color: #000000;
   margin: 30px 0;
+  position: relative;
+}
+
+.conveniences-subtitle-housing::before {
+  position: absolute;
+  top: -105px;
+  left: 50%;
+  width: 75px;
+  height: 72px;
+  margin-left: -37px;
+  content: url(../images/property.svg);
+}
+
+.conveniences-subtitle-food::before {
+  position: absolute;
+  top: -105px;
+  left: 50%;
+  width: 75px;
+  height: 72px;
+  margin-left: -37px;
+  content: url(../images/food.svg);
+}
+
+.conveniences-subtitle-souvenirs::before {
+  position: absolute;
+  top: -105px;
+  left: 50%;
+  width: 75px;
+  height: 72px;
+  margin-left: -37px;
+  content: url(../images/souvenirs.svg);
 }
 
 .conveniences-items p {
@@ -364,6 +425,7 @@ body {
   margin: 0 auto;
   padding: 8px 50px;
   box-sizing: border-box;
+  border-radius: 4px;
 }
 
 .subscription-main {
@@ -403,6 +465,7 @@ body {
   width: 452px;
   border: none;
   padding: 0;
+  border-radius: 4px 0 0 4px;
 }
 
 .subscription-main p {
@@ -420,6 +483,8 @@ body {
   line-height: 36px;
   padding: 8px 50px;
   border: none;
+  cursor: pointer;
+  border-radius: 0 4px 4px 0;
 }
 
 .footer-container {
