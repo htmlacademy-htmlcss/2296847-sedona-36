@@ -584,7 +584,7 @@ body {
   color: rgba(117, 97, 87, 0.3);
 }
 
-.academy-logo {
+.bre-logo {
   display: block;
   fill: #000000;
 }
@@ -628,6 +628,38 @@ body {
   min-height: 15px;
   margin-right: 28px;
   font-size: 16px;
+  position: relative;
+
+}
+
+.breadcrumbs-item::after {
+  position: absolute;
+  left: 23px;
+  width: 8px;
+  height: 20px;
+  background-image: url(../images/breadcrumbs-next.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  content: "";
+
+}
+
+.breadcrumbs-item:last-child::after {
+  content: none;
+}
+
+.breadcrumbs-link-home {
+  position: absolute;
+  background-image: url(../images/breadcrumbs-index.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  min-width: 12px;
+  min-height: 12px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
 }
 
 .catalog-filter {
