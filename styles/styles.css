@@ -727,6 +727,40 @@ body {
   height: 48px;
 }
 
+.button-sorting {
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 2px solid #e5e5e5;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-left: 8px;
+}
+
+.button-sorting:hover {
+  border: 2px solid #000000;
+}
+
+.button-sorting:focus:not(:active) {
+  border: 2px solid #68A2CA;
+}
+
+.button-sorting:active,
+.button-current {
+  border: 2px solid #000000;
+}
+
+.button-tile {
+  background-image: url(../images/view-tile.svg);
+}
+
+.button-show-one {
+  background-image: url(../images/view-show-one.svg);
+}
+
+.button-list {
+  background-image: url(../images/view-list.svg);
+}
+
 .property-list {
   display: grid;
   grid-template-columns: 340px 340px 340px;
