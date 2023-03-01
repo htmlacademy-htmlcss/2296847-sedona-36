@@ -150,6 +150,14 @@ body {
   padding: 22px 12px;
 }
 
+.navigation-link-search {
+  background-color: #000000;
+  -webkit-mask-image: url(../images/search.svg) no-repeat center;
+  mask-image: url(../images/search.svg) no-repeat center;
+  -webkit-mask-size: cover;
+  mask-size: cover;
+}
+
 .navigation-link-favourites {
   position: relative;
 }
@@ -187,11 +195,12 @@ body {
 .navigation-link-booking:hover,
 .navigation-link-booking:focus {
   background-color: #615048;
+
 }
 
 .navigation-link-booking:active {
   color: rgba(255, 255, 255, 0.3);
-  ;
+
 }
 
 .navigation-link-booking:disabled {
