@@ -137,17 +137,33 @@ body {
 .navigation-link-current::before {
   position: absolute;
   right: 16px;
-  bottom: 0;
+  bottom: -1px;
   left: 16px;
-  height: 2px;
-  background-color: #756257;
+  height: 0;
+  border-bottom: 2px solid #756257;
   content: "";
+  z-index: 2;
 }
 
 .navigation-user .navigation-link {
   min-width: 20px;
   min-height: 20px;
   padding: 22px 12px;
+}
+
+.navigation-link-search {
+  background-color: #000000;
+  -webkit-mask: url(../images/search.svg) no-repeat 50% 50%;
+  mask: url(../images/search.svg) no-repeat 50% 50%;
+}
+
+.navigation-link-search:hover,
+.navigation-link-search:focus {
+  background-color: #756157;
+}
+
+.navigation-link-search:active {
+  background-color: rgba(117, 97, 87, 0.3);
 }
 
 .navigation-link-favourites {
@@ -193,11 +209,6 @@ body {
   color: rgba(255, 255, 255, 0.3);
   ;
 }
-
-.navigation-link-booking:disabled {
-  background-color: #e5e5e5;
-}
-
 
 .main-container {
   flex-grow: 1;
@@ -395,7 +406,7 @@ body {
 .conveniences-housing::before {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: start;
   max-height: 72px;
   content: url(../images/property.svg);
 
@@ -404,7 +415,7 @@ body {
 .conveniences-food::before {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: start;
   max-height: 72px;
   content: url(../images/food.svg);
 }
@@ -412,7 +423,7 @@ body {
 .conveniences-souvenirs::before {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: start;
   max-height: 72px;
   content: url(../images/souvenirs.svg);
 }
@@ -492,7 +503,12 @@ body {
   width: 452px;
   border: none;
   padding: 0;
+  padding-left 20px;
   border-radius: 4px 0 0 4px;
+}
+
+.subscription-field:placeholder {
+
 }
 
 .subscription-main p {
@@ -512,6 +528,7 @@ body {
   border: none;
   cursor: pointer;
   border-radius: 0 4px 4px 0;
+  width: 232px;
 }
 
 .subscription-button:hover,
