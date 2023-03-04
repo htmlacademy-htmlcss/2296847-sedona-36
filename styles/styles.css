@@ -691,8 +691,14 @@ body {
 }
 
 .catalog-filter-group {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 16px;
   width: 150px;
+  margin: 0;
   margin-right: 70px;
+  border: none;
+  padding: 0;
 }
 
 .catalog-filter-group-cost {
@@ -705,7 +711,25 @@ body {
   font-size: 20px;
   line-height: 24px;
   text-transform: capitalize;
+  padding: 0;
+  margin-bottom: 33px;
 }
+
+.control-mark {
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  border-radius: 4px;
+}
+
+.control-input[type="checkbox"]:checked + .control-mark::before {
+  content: "";
+  background-image: url(../images/checkbox.svg);
+  width: 13px;
+  height: 11px;
+
+}
+
 
 .control {
   line-height: 23px;
@@ -749,7 +773,7 @@ body {
   padding: 12px 40px 12px 19px;
   background-image: url(../images/select-item.svg);
   background-repeat: no-repeat;
-  background-position: right 19px center;
+  background-position: right 18px center;
 }
 
 .select-control:hover,
@@ -842,22 +866,18 @@ body {
   font-size: 24px;
   line-height: 28px;
   color: #000000;
-
 }
 
 .property-card-type-of-housing {
   margin: 0;
   max-width: 140px;
   overflow-wrap: break-word;
-
 }
 
 .property-card-price {
   text-align: right;
   margin: 0;
   align-self: end;
-
-
 }
 
 .property-card-button {

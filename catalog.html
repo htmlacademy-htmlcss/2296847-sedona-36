@@ -69,21 +69,24 @@
             <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
               <fieldset class="catalog-filter-group">
                 <legend class="catalog-filter-title">Инфраструктура:</legend>
+                <input class="visually-hidden control-input" type="checkbox" name="pool" id="pool" checked>
+                <span class="control-mark"></span>
                 <label class="control" for="pool">Бассейн</label>
-                <input class="control-input" type="checkbox" name="pool" id="pool" checked>
+                <input class="visually-hidden control-input" type="checkbox" name="parking" id="parking" checked>
+                <span class="control-mark"></span>
                 <label class="control" for="parking">Парковка</label>
-                <input class="control-input" type="checkbox" name="parking" id="parking" checked>
+                <input class="visually-hidden control-input" type="checkbox" name="wi-fi" id="wi-fi">
+                <span class="control-mark"></span>
                 <label class="control" for="wi-fi">Wi-Fi</label>
-                <input class="control-input" type="checkbox" name="wi-fi" id="wi-fi">
               </fieldset>
               <fieldset class="catalog-filter-group">
                 <legend class="catalog-filter-title">Тип жилья:</legend>
-                <label class="control" for="hotel">Отель</label>
                 <input class="control-input" type="radio" name="type-of-housing" value="hotel" id="hotel" checked>
-                <label class="control" for="motel">Мотель</label>
+                <label class="control" for="hotel">Отель</label>
                 <input class="control-input" type="radio" name="type-of-housing" value="motel" id="motel">
-                <label class="control" for="apartment">Апартаменты</label>
+                <label class="control" for="motel">Мотель</label>
                 <input class="control-input" type="radio" name="type-of-housing" value="apartment" id="apartment">
+                <label class="control" for="apartment">Апартаменты</label>
               </fieldset>
               <fieldset class="catalog-filter-group catalog-filter-group-cost">
                 <legend class="catalog-filter-title">Стоимость, ₽:</legend>
