@@ -153,17 +153,26 @@ body {
 }
 
 .navigation-link-search {
+  position: relative;
+}
+
+
+.navigation-link-search::before {
+  content: "";
+  width: 20px;
+  height: 20px;
   background-color: #000000;
   -webkit-mask: url("../images/search.svg") no-repeat 50% 50%;
   mask: url("../images/search.svg") no-repeat 50% 50%;
+  position: absolute;
 }
 
-.navigation-link-search:hover,
-.navigation-link-search:focus {
+.navigation-link-search:hover::before,
+.navigation-link-search:focus::before {
   background-color: #756157;
 }
 
-.navigation-link-search:active {
+.navigation-link-search:active::before {
   background-color: rgba(117, 97, 87, 0.3);
 }
 
