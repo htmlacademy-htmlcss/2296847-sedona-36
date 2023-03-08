@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <title>Каталог</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
     <base href="https://htmlacademy-htmlcss.github.io/2296847-sedona-36/10/">
 </head>
 
@@ -31,7 +32,7 @@
           <ul class="navigation-list navigation-user">
             <li class="navigation-item">
               <a class="navigation-link navigation-link-search" href="#">
-                <span class="visually-hidden">Поиск</span>
+                <span class="visually-hidden">Поиск.</span>
               </a>
             </li>
             <li class="navigation-item">
@@ -53,16 +54,16 @@
           <ol class="breadcrumbs">
             <li class="breadcrumbs-item">
               <a class="breadcrumbs-link-home" href="index.html">
-                <span class="visually-hidden">Главная</span>
+                <span class="visually-hidden">Главная.</span>
               </a>
             </li>
             <li class="breadcrumbs-item">
-              Гостиницы
+              <a class="breadcrumbs-link">Гостиницы</a>
             </li>
           </ol>
 
           <section class="filter">
-            <h2 class="visually-hidden">Фильтры гостиниц</h2>
+            <h2 class="visually-hidden">Фильтры гостиниц.</h2>
             <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
               <fieldset class="catalog-filter-group">
                 <legend class="catalog-filter-title">Инфраструктура:</legend>
@@ -137,10 +138,10 @@
                 <div class="range">
                   <div class="range-scale">
                     <div class="range-bar" style="left: 0; width: 226px">
-                      <button class="range-toggle toggle-min">
+                      <button class="range-toggle toggle-min" type="button">
                         <span class="visually-hidden">Изменить минимальную цену.</span>
                       </button>
-                      <button class="range-toggle toggle-max">
+                      <button class="range-toggle toggle-max" type="button">
                         <span class="visually-hidden">Изменить максимальную цену.</span>
                       </button>
                     </div>
@@ -188,7 +189,9 @@
               <button class="property-card-button-favorites-add button" type="button">
                 В&nbsp;избранное
               </button>
-              <p class="star star-four"><span class="visually-hidden">4 звезды</span></p>
+              <p class="star star-four">
+                <span class="visually-hidden">4 звезды</span>
+              </p>
               <p class="property-card-rating">Рейтинг: 8,5</p>
             </li>
             <li class="property-card">
@@ -204,7 +207,9 @@
               <button class="property-card-button-favorites-added button" type="button">
                 В&nbsp;избранном
               </button>
-              <p class="star star-four"><span class="visually-hidden">4 звезды</span></p>
+              <p class="star star-four">
+                <span class="visually-hidden">4 звезды</span>
+              </p>
               <p class="property-card-rating">Рейтинг: 9,2</p>
             </li>
             <li class="property-card">
@@ -220,7 +225,9 @@
               <button class="property-card-button-favorites-add button" type="button">
                 В&nbsp;избранное
               </button>
-              <p class="star star-three"><span class="visually-hidden">3 звезды</span></p>
+              <p class="star star-three">
+                <span class="visually-hidden">3 звезды</span>
+              </p>
               <p class="property-card-rating">Рейтинг: 6,9</p>
             </li>
             <li class="property-card">
@@ -236,7 +243,9 @@
               <button class="property-card-button-favorites-add button" type="button">
                 В&nbsp;избранное
               </button>
-              <p class="star star-two"><span class="visually-hidden"> 2 звезды</span></p>
+              <p class="star star-two">
+                <span class="visually-hidden"> 2 звезды</span>
+              </p>
               <p class="property-card-rating">Рейтинг: 5,0</p>
             </li>
           </ul>
@@ -267,7 +276,8 @@
           <h2 class="subscription-title subscription-title-catalog">Подпишитесь на рассылку</h2>
           <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
           <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
-            <input class="subscription-field" placeholder="Ваш e-mail" type="email" name="subscription-email" required>
+            <label class="visually-hidden" for="subscription-email">Email.</label>
+            <input class="subscription-field" placeholder="Ваш e-mail" type="email" name="subscription-email" id="subscription-email" required>
             <button class="button subscription-button" type="submit">Подписаться</button>
           </form>
 
@@ -276,17 +286,17 @@
           <ul class="footer-social-list">
             <li class="footer-social-item">
               <a class="social-link social-link-vk" href="https://vk.com/htmlacademy">
-                <span class="visually-hidden">ВКонтакте</span>
+                <span class="visually-hidden">ВКонтакте.</span>
               </a>
             </li>
             <li class="footer-social-item">
               <a class="social-link social-link-tg" href="https://t.me/htmlacademy">
-                <span class="visually-hidden">Телеграм</span>
+                <span class="visually-hidden">Телеграм.</span>
               </a>
             </li>
             <li class="footer-social-item">
               <a class="social-link social-link-youtube" href="https://www.youtube.com/user/htmlacademyru">
-                <span class=" visually-hidden">Ютуб</span>
+                <span class=" visually-hidden">Ютуб.</span>
               </a>
             </li>
           </ul>
@@ -294,7 +304,7 @@
           <a class="phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
 
           <a class="navigation-academy" href="https://htmlacademy.ru/">
-            <span class="visually-hidden">HTML academy</span>
+            <span class="visually-hidden">HTML academy.</span>
           </a>
         </div>
       </footer>
