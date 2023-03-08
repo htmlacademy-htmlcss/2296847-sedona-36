@@ -848,7 +848,6 @@ body {
 
 .modal-field-guests::-webkit-outer-spin-button,
 .modal-field-guests::-webkit-inner-spin-button {
-  -webkit-appearance: none;
   appearance: none;
   margin: 0;
 }
