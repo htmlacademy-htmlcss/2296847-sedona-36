@@ -315,11 +315,11 @@ body {
 }
 
 .advantages-container {
-  padding: 0 84px;
+  padding: 102px 84px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   min-height: 385px;
   width: 400px;
@@ -358,17 +358,24 @@ body {
 .advantages-item-tourists {
   background-color: rgba(131, 179, 211, 0.12);
   color: #000000;
-}
+ }
 
 .advantages-item-road {
   background-color: rgba(131, 179, 211, 0.2);
   color: #000000;
 }
 
+.advantages-container-square,
+.advantages-container-tourists,
+.advantages-container-road {
+  padding: 114px 84px 111px;
+}
+
 .advantages-container-square::before,
 .advantages-container-road::before,
 .advantages-container-tourists::before {
   background-color: rgba(0, 0, 0, 0.3);
+  margin-top: -1px;
 }
 
 .advantages-item img {
@@ -415,7 +422,7 @@ body {
   flex-direction: column;
   padding: 81px 85px;
   box-sizing: border-box;
-  justify-content: end;
+  justify-content: start;
   align-items: center;
 }
 
@@ -463,7 +470,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   margin-bottom: 29px;
-  margin-top: -6px;
+  margin-top: -2px;
 }
 
 .conveniences-items p {
@@ -508,7 +515,7 @@ body {
   color: #ffffff;
   background-color: #000000;
   background-image: url("../images/subscribe-background.jpg");
-  background-size: 100% auto;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
   min-height: 415px;
   padding: 96px 258px 104px 258px;
@@ -856,9 +863,8 @@ body {
   line-height: 20px;
   text-align: center;
   background-image: none;
-  -webkit-appearance: none;
-  appearance: none;
   margin: 0;
+  -moz-appearance: textfield;
 }
 
 .modal-field-guests::-webkit-outer-spin-button,
@@ -866,14 +872,6 @@ body {
   -webkit-appearance: none;
   appearance: none;
   margin: 0;
-}
-
-input[type="number"],
-input[type="number"]:hover,
-input[type="number"]:focus {
-  -webkit-appearance: none;
-  appearance: none;
-  -moz-appearance: textfield;
 }
 
 .modal-field-guests:hover {
@@ -1080,7 +1078,8 @@ input[type="number"]:focus {
   background-color: #000000;
   color: #ffffff;
   background-image: url("../images/filter-background.jpg");
-  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
   min-height: 412px;
   padding: 35px 70px 70px;
   box-sizing: border-box;
@@ -1260,6 +1259,7 @@ input[type="number"]:focus {
   line-height: 24px;
   box-sizing: border-box;
   background-color: #f2f2f2;
+  -moz-appearance: textfield;
 }
 
 .range-input::-webkit-outer-spin-button,
@@ -1438,6 +1438,7 @@ input[type="number"]:focus {
   line-height: 21px;
   color: #333333;
   width: 292px;
+  max-height: 49px;
   margin-right: auto;
   -webkit-appearance: none;
   appearance: none;
@@ -1447,6 +1448,8 @@ input[type="number"]:focus {
   background-image: url("../images/select-item.svg");
   background-repeat: no-repeat;
   background-position: right 18px center;
+  cursor: pointer;
+  background-color: #ffffff;
 }
 
 .select-control:hover,
